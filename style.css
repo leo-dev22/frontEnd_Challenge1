@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root{
+  --width-mobile:375px;
+  --width-desktop:1440px;
+
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+
+  --fontSize-para:15px;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  /* overflow: hidden; */
+}
+body{
+  width: var(--width-desktop);
+  border: 3px solid red;
+}
+header{
+ text-align: center;
+ border: 3px blue solid;
+ margin: 40px;
+}
+
+header nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 2px solid yellow;
+height: 80px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  margin-right: 40px;
+}
+
+.top{
+  border: 2px darkgreen solid;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4px;
+}
+.main-image{
+  /* width: 300px; */
+
+ 
+}
+.main-image img{
+  width:auto;
+}
