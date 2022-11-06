@@ -21,7 +21,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 p{
   font-size: var(--fontSize-para);
@@ -31,94 +31,80 @@ p{
 body{
   font-family: 'Inter',sans-serif;
   width: var(--width-desktop);
-  border: 3px solid red;
 }
 header{
  text-align: center;
- border: 3px blue solid;
- margin: 60px;
+ margin: 20px 50px;
+ padding: 0 45px;
 }
 
 header nav{
 display: flex;
 justify-content: space-between;
 align-items: center;
-border: 2px solid yellow;
-height: 80px;
+height: 40px;
 
 }
-header nav ul {
+header nav ul  {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+ul li:last-child{
+  margin-right: 0;
 }
 header nav ul li {
   margin-right: 40px;
 }
 main{
-  border: 3px solid rgb(45, 254, 3);
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 20px;
+  display: flex;
+  gap: 30px;
   margin-top: 30px;
 }
 
-section.left{
-display:inline-block;
-justify-content: left;
-border: 2px solid gold;
-}
 section.left .top{
   margin-bottom: 20px;
 }
 .main-image{
   background: url(./images/image-web-3-desktop.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  height: 350px;
-  width: 850px;
-  border: 3px solid lightcoral;
+  height: 300px;
+  width: 868px;
   margin-bottom: 0;
 
  
 }
-.main-image img{
-  width: fit-content;
-  /* height: auto; */
-}
+
 section.left .bottom{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap:50px;
-  border: 2px solid black;
+  display: flex;
 }
 section.left .bottom h1{
-  font-size: 3.6rem;
+  font-size: 3.5rem;
   text-align: left;
-  border: 2px solid red;
-  font-weight: 800;
-  /* letter-spacing: -0.01em; */
-  line-height: 3.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 3.9rem;
 }
 section.left .bottom .bottom-right{
   text-align: left;
-  border: 2px solid rgb(0, 255, 55);
-   padding:0 1.4rem;
+   padding-left:8rem;
    line-height: 1.5rem;
 }
 section.left .bottom .bottom-right p{
-margin-bottom: 20px;
+  line-height: 1.5rem;
+margin-bottom: 56px;
 }
 section.left .bottom .bottom-right span{
   width: 50%;
   display: inline-block;
   justify-items: center;
-  /* align-items: center; */
   text-align: center;
-  /* margin-top:10px; */
   color: var(--Off-white);
   background-color: var(--Soft-red);
-  padding: 10px;
+  padding: 5px;
+  margin-top: 22px;
   letter-spacing: .15rem;
   border: 2px solid transparent;
 }
@@ -129,18 +115,18 @@ section.left .bottom .bottom-right span:hover{
 section.right{
   background-color: var(--Very-dark-blue);
   border: 2px solid transparent;
-  padding: 65px;
+  padding: 10px 35px ;
 }
 section.right h2{
   text-align: left;
   color: var(--Soft-orange);
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 section.right h3{
   color: var(--Off-white);
   text-align: left;
-  margin: 30px 0;
+  margin: 10px 0;
   letter-spacing: .05em;
 }
 section.right p{
@@ -150,10 +136,65 @@ section.right p{
 }
 section.right .line{
  display: flex;
- margin-top: 20px;
+ text-align: center;
+ margin: 20px 0;
  width: 100%;
  height: 0.07px;
  background-color:  var(--Dark-grayish-blue) ;
 
 }
+footer{
+  margin-top: 30px;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.footer-class{
+  display: flex;
+  margin-right: 15px;
+}
+.footer-class:last-child{
+  margin-right: 0;
+} 
+.retro-pc,.laptops,.gaming{
 
+  height: 150px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.retro-pc{
+    background-image: url(./images/image-retro-pcs.jpg);
+}
+.laptops{
+  background-image: url(./images/image-top-laptops.jpg);
+}
+.gaming{
+  background-image: url(./images/image-gaming-growth.jpg);
+}
+.retro-text,.laptops-text,.gaming-text{
+  margin-left: 20px;
+}
+.number{
+  font-size: 1.6rem;
+  color: var(--Grayish-blue);
+  font-weight: 700;
+}
+footer h4{
+  font-weight: 800;
+  margin: 5px 0;
+}
+footer p{
+  line-height: 1.3rem;
+  margin-bottom: 0;
+}
+.hover-orange:hover{
+color: var(--Soft-red);
+cursor: pointer;
+}
+.hover-yellow:hover{
+  color: var(--Soft-orange);
+  cursor: pointer;
+}
