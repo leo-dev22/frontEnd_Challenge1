@@ -221,19 +221,24 @@ cursor: pointer;
   header ul li{
     display: none;
   }
-  header nav div:first-child{
-    margin:30px;
-    padding: 50px;
-    width: 70px;
-    height: 70px;
-    border: 2px solid red;
+  header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5px;
+  }
+  header img{
+    width: 42px;
   }
   header .logo{
     width:auto;
-    
-
+    text-align: left;
   }
   header .hamburger{
     display: inline-block;
+    text-align: right;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
