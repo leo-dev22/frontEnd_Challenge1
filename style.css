@@ -45,8 +45,11 @@ align-items: center;
 height: 40px;
 
 }
-.hamburger{
+#hamburger{
   display: none;
+}
+#close-hamburger{
+  /* display:; */
 }
 header nav ul  {
   display: flex;
@@ -210,6 +213,9 @@ cursor: pointer;
 
 
 @media screen and (min-width:375px) {
+  *{
+    overflow-y:visible;
+  }
   body{
     width: var(--width-mobile);
     border: 1px solid rgb(241, 6, 6);
@@ -233,12 +239,106 @@ cursor: pointer;
     width:auto;
     text-align: left;
   }
-  header .hamburger{
+  header #hamburger{
     display: inline-block;
     text-align: right;
+    cursor: pointer;
   }
   main{
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 15px;
+
   }
+  .main-image{
+    background:url(./images/image-web-3-mobile.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    height: 265px;
+    margin-bottom: 0;
+  }
+  section.left .top{
+    margin-bottom: 0;
+  }
+
+  section.left .bottom{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  section.left .bottom h1{
+    font-size: 2.6rem;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 2.6rem;
+    margin-top: 20px;
+    overflow-y: hidden;
+  }
+  section.left .bottom .bottom-right{
+    text-align: left;
+     padding-left:0;
+     line-height: 1.5rem;
+  }
+  
+  section.left .bottom .bottom-right p{
+    font-size: 13.8px;
+    line-height: 1.5rem;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  }
+  
+  /* section.left .bottom .bottom-right span{
+    width: 50%;
+    display: inline-block;
+    justify-items: center;
+    text-align: center;
+    color: var(--Off-white);
+    background-color: var(--Soft-red);
+    padding: 5px;
+    margin-top: 22px;
+    letter-spacing: .15rem;
+    border: 2px solid transparent;
+  } */
+  
+  section.right{
+    padding: 20px 25px ;
+  }
+  section.right h2{
+    text-align: left;
+    color: var(--Soft-orange);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  
+  footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+  .footer-class{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* flex-wrap: wrap; */
+    margin-right: 0px;
+  }
+
+  .retro-text,.laptops-text,.gaming-text{
+    margin-left: 16px;
+    
+  }
+  .number{
+    font-size: 1.75rem;
+  }
+  footer h4{
+    font-weight: 800;
+    margin: 6px 0 ;
+  }
+  footer p{
+    line-height: 1.5rem; 
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+ 
+  
 }
