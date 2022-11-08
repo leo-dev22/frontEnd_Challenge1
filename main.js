@@ -1,8 +1,4 @@
-const hamburger = document.getElementById('hamburger');
-const closeHamburger= document.getElementById('close-hamburger');
-console.log(hamburger);
+const menuToggle = document.querySelector('.menu-toggle');
 
-hamburger.addEventListener('click',()=>{
-  hamburger.style.display='hidden';
-  closeHamburger.style.display='block';
-})
+console.log(menuToggle);
+
