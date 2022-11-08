@@ -23,6 +23,7 @@
   text-decoration: none;
   overflow: hidden;
   box-sizing: border-box;
+  
 }
 p{
   font-size: var(--fontSize-para);
@@ -32,6 +33,7 @@ p{
 body{
   font-family: 'Inter',sans-serif;
   width: var(--width-desktop);
+ 
 }
 header{
  text-align: center;
@@ -216,7 +218,6 @@ cursor: pointer;
   }
   body{
     width: var(--width-mobile);
-    border: 1px solid rgb(241, 6, 6);
   }
   header{
     padding: 15px;
@@ -242,13 +243,86 @@ cursor: pointer;
     height: 30px;
     width: 30px;
     background-repeat: no-repeat;
-    /* display: inline-block; */
+    display: inline-block;
     /* text-align: right; */
     cursor: pointer;
     position: absolute;
     right: 20px;
     top: 30px;
+    z-index: 999;
   }
+  header .menu-toggle[aria-expanded='true']{
+    background-image: url(./images/icon-menu-close.svg);
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    height: 30px;
+    width: 30px;
+    z-index: 999;
+  }
+/* XXXXXXXXXXXXXXX */
+.menu-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 99;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  left: 35%;
+  height: 100vh;
+  width: 65vw;
+  background: var(--Off-white);
+  backdrop-filter: blur(1rem);
+  transform: translateX(100%);
+  transition: transform 400ms ease-in-out;
+}
+
+ul[data-visible='true'] {
+  transform: translateX(0%);
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+ul{
+  justify-content: center;
+  margin: 0;
+}
+
+.menu-list li {
+  margin-left:30px;
+  display: flex;
+  justify-items: flex-start;
+  font-family: 'Inter',sans-serif;
+}
+.menu-list li:nth-child(1){
+ margin-top: 80px;
+}
+.menu-list li:nth-child(2){
+ margin-top: -80px;
+}
+.menu-list li:nth-child(3){
+ margin-top: -140px;
+}
+.menu-list li:nth-child(4){
+ margin-top: -200px;
+}
+.menu-list li:nth-child(5){
+ margin-top: -260px;
+}
+
+.menu-list a {
+  opacity: 1;
+  transition: transform 250ms ease-in-out 250ms;
+  text-transform:capitalize;
+  color: var(--Very-dark-blue);
+}
+
+.navigation-primary a:hover {
+  color:var(--Soft-red);
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
   main{
     display: grid;
     grid-template-columns: 1fr;
