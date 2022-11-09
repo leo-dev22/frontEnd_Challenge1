@@ -212,7 +212,7 @@ cursor: pointer;
 }
 
 
-@media screen and (min-width:375px) {
+@media only screen and (max-width:375px) {
   *{
     overflow-y:visible;
   }
